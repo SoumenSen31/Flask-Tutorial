@@ -1,0 +1,4 @@
+FORMS
+1.name
+2.methods always in uppercase POST/GET
+3.action="/submit" (where to send the form data)
