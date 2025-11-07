@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>{% block title %}  {% endblock title %}</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    padding: 15px;
+    background:linear-gradient(135deg, #1abc9c, #16a085, #149174);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-style :none;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.navLinks a{
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+        <nav class="nav">
+            <div class="logo">
+                <h3>The Great</h3>
+            </div>
+            <div class="navLinks">
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+            </div>
+        </nav>
+    {% block content %}
+    
+    {% endblock content %}
+    
+</body>
+</html>
