@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+<style>
+    .error-message {
+        text-align: center;
+        color: #D8000C; 
+        background-color: #FFD2D2;
+        border: 1px solid #D8000C;
+        padding: 15px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+</style>
+    <p>ERROR {{message}}</p>
+{% endblock %}
